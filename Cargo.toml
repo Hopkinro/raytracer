@@ -1,0 +1,12 @@
+[package]
+name = "raytracer"
+version = "0.1.0"
+edition = "2021"
+description = "A multithreaded path tracer with zero dependencies: BVH, glass, metal, lights, depth of field, PNG output"
+license = "MIT"
+
+[dependencies]
+
+[profile.release]
+codegen-units = 1
+lto = true
